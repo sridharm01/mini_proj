@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>SkinSpectra</title>
+    <link rel="icon" href="/static/virus_3009476.png" type="image/icon type">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/static/index.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <style>
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .card {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            flex: 1 1 calc(50% - 40px);
+            box-sizing: border-box;
+        }
+
+        .card h3 {
+            margin-top: 0;
+        }
+
+        .container p {
+            padding-top: 10px;
+            text-align: justify;
+        }
+
+        body {
+
+            background: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .container {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 25px;
+            margin: 0px auto;
+        }
+
+        .banner-image {
+            position: relative;
+            width: 100%;
+
+            margin-bottom: 40px;
+        }
+
+        .banner-image img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .banner-text {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            color: white;
+            font-size: 2em;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .container {
+            margin-top: 50px;
+        }
+
+        .highlight {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+
+        .card-columns {
+            column-count: 2;
+        }
+
+        .card {
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            background-color:gray;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar bg-body-tertiary fixed-top" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="/static/virus_3009476.png" id="logo" style="width: 40px; height: 40px; margin-right: 10px;">
+                <span>SkinSpectra</span>
+            </a>
+            <div style="display:flex;justify-content:center;align-items:center;">
+                <!-- <a href="/login"><span style="color:white">Login</span></a> -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarSupportedContent"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link " href="/limitations">Limitations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/detection_tool">Detection Tool</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/disease">Disease Details</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"
+                            href="mailto:sample20030@gmail.com?subject=Regarding%20SkinSpectra">Contact Us</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" href="/login">Login</a>
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+            <br>
+    </nav>
+    <br><br>
+
+    <div class="banner-image"
+        style="background:url(/static/banner_img.jpg) center center / cover no-repeat;height:60pc;">
+        <!-- <img src="/static/banner_img.jpg" class="img-fluid" alt="Image Not Found"> -->
+        <div class="banner-text" style="margin-top:10pc;margin-left:5pc">
+            <h1 style="font-size: 3.5rem;"><br>Advanced <br><span>Skin Cancer <br> Detection</span></h1>
+        </div>
+    </div>
+    <h1>
+        <center>
+            Welcome To Skin Spectra!!</center>
+    </h1>
+
+    <div class="container">
+        <div class="card text-center">
+            <div class="card-body">
+                <p class="card-text">At SkinSpectra, we're dedicated to providing advanced skin cancer detection using
+                    state-of-the-art technology. Our platform leverages a robust ML model to accurately identify seven
+                    types of skin cancer lesions, including:</p>
+                <ol class="list-group list-group-flush">
+                    <li class="list-group-item">Melanocytic nevi</li>
+                    <li class="list-group-item">Melanoma</li>
+                    <li class="list-group-item">Benign keratosis-like lesions</li>
+                    <li class="list-group-item">Basal cell carcinoma</li>
+                    <li class="list-group-item">Actinic keratoses</li>
+                    <li class="list-group-item">Vascular lesion</li>
+                    <li class="list-group-item">Dermatofibroma</li>
+                </ol>
+                <p class="card-text mt-3">Additionally, SkinSpectra offers the capability to detect normal skin,
+                    providing a comprehensive screening solution for individuals concerned about their skin health.</p>
+            </div>
+        </div>
+
+        <div class="card-columns">
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="card-title">Why SkinSpectra?</h2>
+                    <div class="highlight">
+                        <p><strong>Comprehensive Detection:</strong> SkinSpectra is designed to detect a wide range of
+                            skin cancer types, ensuring comprehensive screening and diagnosis.</p>
+                    </div>
+                    <div class="highlight">
+                        <p><strong>Cutting-Edge Technology:</strong> Our ML model combines the latest advancements in
+                            machine learning with deep learning techniques to achieve unparalleled accuracy and
+                            reliability.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="card-title"></h2>
+                    <div class="highlight">
+                        <p><strong>Accessible and User-Friendly:</strong> With an intuitive interface and simple
+                            navigation, SkinSpectra makes skin cancer screening accessible to everyone, from healthcare
+                            professionals to individuals concerned about their skin health.</p>
+                    </div>
+                    <div class="highlight">
+                        <p><strong>Fast and Confidential:</strong> Get rapid results while maintaining privacy and
+                            confidentiality, empowering you to take timely action for your skin health.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-body">
+                <h2 class="card-title">How SkinSpectra Works</h2>
+                <p><strong>1. Upload or Capture Your Image:</strong> Easily upload an existing image of the skin lesion
+                    you want to analyze, or capture a new image directly from your device's camera.</p>
+                <p><strong>2. ML Analysis:</strong> Our ML model analyzes the image, leveraging advanced algorithms to
+                    accurately classify the skin lesion into one of the seven types of skin cancer or normal skin.</p>
+                <p><strong>3. Receive Results:</strong> In a matter of seconds, receive your results, including the
+                    classification of the skin lesion and any recommended steps for further evaluation or treatment.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-body">
+                <h2 class="card-title">Empowering Skin Health</h2>
+                <p>Early detection is key to effective skin cancer management. With SkinSpectra, you can take proactive
+                    control of your skin health and make informed decisions about your well-being. Whether you're a
+                    healthcare professional seeking advanced diagnostic tools or an individual monitoring your skin
+                    health, SkinSpectra is here to support you every step of the way.</p>
+            </div>
+        </div>
+
+        <div class="card text-center">
+            <div class="card-body">
+                <h2 class="card-title">Get Started Today</h2>
+                <p class="card-text">Don't wait for skin cancer to progress. Take charge of your skin health with
+                    SkinSpectra. Begin your journey towards early detection and prevention today.</p>
+                <a href="#" class="btn">Get Started</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

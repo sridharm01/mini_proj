@@ -1,0 +1,148 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Register</title>
+</head>
+<body>
+    <form method="POST" action="/">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br>
+        <input type="submit" value="Register">
+    </form>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <style>
+        /* Add your CSS styles here */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            height: 87vh;
+            background-color: whitesmoke;
+        }
+
+        .container {
+            width: 80%;
+            height: 90%;
+            margin: 90px 150px;
+            background-color: #ccc;
+            border-radius: 20px;
+            padding: 55px;
+            padding-left: 120px;
+            padding-bottom: 0px;
+        }
+
+        .left-box {
+            float: left;
+        }
+
+        #icon {
+            height: 40px;
+            width: 40px;
+        }
+
+        p {
+            font-size: 28px;
+            font-weight: bold;
+            padding-left: 7px;
+            display: flex;
+            align-items: center;
+        }
+
+        h2 {
+            margin: 40px;
+            margin-left: 0;
+        }
+
+        label {
+            font-size: 20px;
+        }
+
+        input {
+            width: 250px;
+            height: 30px;
+            border-radius: 5px;
+            border: none;
+            margin: 10px;
+            margin-left: 0;
+            outline: none;
+            padding-left: 8px;
+        }
+
+        input:hover {
+            border: none;
+        }
+
+        a {
+            text-decoration: none;
+            padding-left: 30px;
+        }
+
+        a:hover {
+            color: #3c88b1;
+        }
+
+        #span {
+            font-size: 15px;
+            margin: 0;
+        }
+
+        button {
+            width: 100px;
+            height: 32px;
+            border-radius: 10px;
+            border: none;
+            margin-top: 25PX;
+            margin-left: 70PX;
+            background-color: #828a92;
+            font-size: 17px;
+            transition: transform 0.3s ease;
+        }
+
+        button:hover {
+            transform: scale(1.1);
+        }
+
+        img {
+            width: 45%;
+            margin-left: 22%;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-box">
+            <p><img src="/static/touch.png" id="icon" alt="">Skin Spectra </p>
+            <h2>Register</h2>
+            <form method="POST" action="/reg">
+                <label for="username">Name</label> <br>
+                <input type="text" id="username" name="username" required> <br>
+                <label for="email">Email</label> <br>
+                <input type="email" id="email" name="email" required> <br>
+                <label for="password">Password</label> <br>
+                <input type="password" id="password" name="password" required> <br>
+                <span><a href="/login">Already have an account?</a></span> <br>
+                <input type="submit" value="Register">
+            </form>
+        </div>
+        <div class="right-box">
+            <img src="/static/LOGIN_IMAGE.avif" alt="">
+        </div>
+    </div>
+</body>
+</html>

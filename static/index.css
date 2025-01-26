@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&family=VT323&display=swap');
+body {
+    background-color: whitesmoke;
+    font-family: 'poppins';
+}
+
+a:hover {
+    background-color: silver;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.navbar-brand {
+    pointer-events: none;
+}
+
+.navbar-toggler {
+    position: absolute;
+    right: 20px;
+}
+.offcanvas-end.show{
+    width: 220px;
+}
+.nav-link{
+    width: 200px;
+}
+
+#main_pg_cont {
+    width: 90%;
+    margin: 0 auto;
+}
+.banner-image {
+    width: 100%;
+    height: auto;
+}
+.banner-image img {
+    width: 100%;
+    object-fit: cover;
+}
+#precautions-content{
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px;
+}
+li{
+    list-style: none;
+}
+#melanocytic-img{
+    width: max-content;
+    padding: 10px;
+}
+#melanoma-img{
+    width: max-content;
+    padding: 10px;
+}
+#benign_keratosis-img{
+    width: max-content;
+    padding: 10px;
+}
+#basal_cell-img{
+    width: max-content;
+    padding: 10px;
+}
+#actinic-img{
+    width: max-content;
+    padding: 10px;
+}
+#vascular-img{
+    width: max-content;
+    padding: 10px;
+}
+#dermatofibroma-img{
+    width: max-content;
+    padding: 10px;
+}
+#img_upload_btn{
+    padding: 15px;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+#detection{
+    width:max-content;
+    padding: 10px;
+    margin: 0 auto;
+}
+#video {
+    border: 1px solid black;
+    box-shadow: 2px 2px 3px black;
+    width: 320px;
+    height: 240px;
+}
+
+#photo {
+    border: 1px solid black;
+    box-shadow: 2px 2px 3px black;
+    width: 320px;
+    height: 240px;
+}
+
+#canvas {
+    display: none;
+}
+
+.camera {
+    width: 340px;
+    display: inline-block;
+}
+
+.output {
+    width: 340px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#startbutton {
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 32px;
+    background-color: rgb(0 150 0 / 50%);
+    border: 1px solid rgb(255 255 255 / 70%);
+    box-shadow: 0px 0px 1px 2px rgb(0 0 0 / 20%);
+    font-size: 14px;
+    font-family: "Lucida Grande", "Arial", sans-serif;
+    color: rgb(255 255 255 / 100%);
+}
+
+.contentarea {
+    font-size: 16px;
+    width:max-content;
+    padding: 10px;
+    margin: 0 auto;
+}
+@media screen and (max-width: 767px) {
+    .camera,.output {
+      width: 100%;
+      display: block;
+      margin-bottom: 10px;
+      padding: 10px; 
+    }
+  
+    #video,#photo {
+      width: 100%;
+      height: auto; 
+      padding: 10px;
+    }
+    #cap-img {
+        text-align: center;
+    }
+    .contentarea {
+        width: 100%; 
+    }
+  }
+  .limitations{
+    padding: 10px;
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+  }
+  .disclaimer{
+    padding: 20px;
+  }
